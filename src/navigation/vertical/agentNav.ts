@@ -54,6 +54,13 @@ const AgentNavigation = (): VerticalNavItemsType => {
         badgeColor: 'primary',
         path: '/wallboard',
         permission: 'dashboardPermission'
+      },
+      {
+        title: 'Students',
+        icon: 'ep:data-board',
+        badgeColor: 'primary',
+        path: '/students',
+        permission: 'studentPermission'
       }
     ]
     sideBarPermission && setNavObj(filterNavigation(temp))

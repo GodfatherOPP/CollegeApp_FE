@@ -15,6 +15,7 @@ import HorizontalNavItems from 'src/navigation/horizontal'
 import MasterAdminNavigation from 'src/navigation/vertical/masterAdminNav'
 import AdminNavigation from 'src/navigation/vertical/adminNav'
 import AgentNavigation from 'src/navigation/vertical/agentNav'
+import StudentNavigation from 'src/navigation/vertical/studentNav'
 
 // ** Component Import
 // Uncomment the below line (according to the layout type) when using server-side menu
@@ -66,6 +67,9 @@ const BasicLayout = ({ children, contentHeightFixed }: Props) => {
         break
       case 3:
         return AgentNavigation()
+        break
+      case 4:
+        return StudentNavigation()
         break
       default:
         return VerticalNavItems()

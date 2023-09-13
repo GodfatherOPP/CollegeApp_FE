@@ -27,7 +27,7 @@ const defineRulesFor = (role: string, subject: string) => {
   // }
   if (role === 'Master Admin') {
     can('manage', 'all')
-  } else if (role === 'Admin' || role === 'Agent') {
+  } else if (role === 'Admin' || role === 'Agent' || role === 'Student') {
     can('manage', subject)
   } else {
     can([], subject)
